@@ -4,3 +4,6 @@
 *.bin
 *.out
 *.dat
+*.jou
+*.log
+*.gch
