@@ -1,0 +1,371 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Oct 24 17:15:48 2019
+# Process ID: 22729
+# Current directory: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1
+# Command line: vivado -log os_pfb_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source os_pfb_wrapper.tcl
+# Log file: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/os_pfb_wrapper.vds
+# Journal file: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source os_pfb_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top os_pfb_wrapper -part xczu28dr-ffvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22755 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1498.527 ; gain = 84.000 ; free physical = 6867 ; free virtual = 13365
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_wrapper' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/hdl/os_pfb_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:138]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_axi_dma_0_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_axi_dma_0_0' (1#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_dma_0' of module 'os_pfb_axi_dma_0_0' requires 64 connections, but only 57 given [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:304]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_axi_smc_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_axi_smc_0' (2#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_os_pfb_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_os_pfb_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_os_pfb_0' (3#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_os_pfb_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'os_pfb' of module 'os_pfb_os_pfb_0' requires 12 connections, but only 10 given [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:431]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_ps8_0_axi_periph_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:669]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_GGXORS' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_GGXORS' (4#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:12]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_3K24VT' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:1305]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_auto_ds_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_auto_ds_0' (5#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_auto_pc_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_auto_pc_0' (6#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_3K24VT' (7#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:1305]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_195GAZS' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:1715]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_auto_ds_1' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_auto_ds_1' (8#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_auto_pc_1' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_auto_pc_1' (9#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_195GAZS' (10#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:1715]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_xbar_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_xbar_0' (11#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'os_pfb_xbar_0' requires 40 connections, but only 37 given [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:1265]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_ps8_0_axi_periph_0' (12#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:669]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_rst_ps8_0_99M_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_rst_ps8_0_99M_0' (13#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps8_0_99M' of module 'os_pfb_rst_ps8_0_99M_0' requires 10 connections, but only 6 given [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:541]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_zynq_ultra_ps_e_0_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_zynq_ultra_ps_e_0_0' (14#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/.Xil/Vivado-22729-smithpc/realtime/os_pfb_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'zynq_ultra_ps_e_0' of module 'os_pfb_zynq_ultra_ps_e_0_0' requires 125 connections, but only 118 given [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:548]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb' (15#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/synth/os_pfb.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_wrapper' (16#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/hdl/os_pfb_wrapper.v:12]
+WARNING: [Synth 8-3331] design s01_couplers_imp_195GAZS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_195GAZS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_3K24VT has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_3K24VT has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_GGXORS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_GGXORS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_GGXORS has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_GGXORS has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port S01_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1545.277 ; gain = 130.750 ; free physical = 6880 ; free virtual = 13378
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1545.277 ; gain = 130.750 ; free physical = 6880 ; free virtual = 13379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1545.277 ; gain = 130.750 ; free physical = 6880 ; free virtual = 13379
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_axi_dma_0_0/os_pfb_axi_dma_0_0/os_pfb_axi_dma_0_0_in_context.xdc] for cell 'os_pfb_i/axi_dma_0'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_axi_dma_0_0/os_pfb_axi_dma_0_0/os_pfb_axi_dma_0_0_in_context.xdc] for cell 'os_pfb_i/axi_dma_0'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_axi_smc_0/os_pfb_axi_smc_0/os_pfb_axi_smc_0_in_context.xdc] for cell 'os_pfb_i/axi_smc'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_axi_smc_0/os_pfb_axi_smc_0/os_pfb_axi_smc_0_in_context.xdc] for cell 'os_pfb_i/axi_smc'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_os_pfb_0/os_pfb_os_pfb_0/os_pfb_os_pfb_0_in_context.xdc] for cell 'os_pfb_i/os_pfb'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_os_pfb_0/os_pfb_os_pfb_0/os_pfb_os_pfb_0_in_context.xdc] for cell 'os_pfb_i/os_pfb'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_xbar_0/os_pfb_xbar_0/os_pfb_xbar_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_xbar_0/os_pfb_xbar_0/os_pfb_xbar_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_auto_ds_0/os_pfb_auto_ds_0/os_pfb_auto_ds_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_auto_ds_0/os_pfb_auto_ds_0/os_pfb_auto_ds_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_auto_pc_0/os_pfb_auto_pc_0/os_pfb_auto_pc_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_auto_pc_0/os_pfb_auto_pc_0/os_pfb_auto_pc_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_auto_ds_1/os_pfb_auto_ds_1/os_pfb_auto_ds_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_auto_ds_1/os_pfb_auto_ds_1/os_pfb_auto_ds_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_auto_pc_1/os_pfb_auto_pc_1/os_pfb_auto_pc_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_auto_pc_1/os_pfb_auto_pc_1/os_pfb_auto_pc_0_in_context.xdc] for cell 'os_pfb_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_rst_ps8_0_99M_0/os_pfb_rst_ps8_0_99M_0/os_pfb_rst_ps8_0_99M_0_in_context.xdc] for cell 'os_pfb_i/rst_ps8_0_99M'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_rst_ps8_0_99M_0/os_pfb_rst_ps8_0_99M_0/os_pfb_rst_ps8_0_99M_0_in_context.xdc] for cell 'os_pfb_i/rst_ps8_0_99M'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_zynq_ultra_ps_e_0_0/os_pfb_zynq_ultra_ps_e_0_0/os_pfb_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'os_pfb_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_zynq_ultra_ps_e_0_0/os_pfb_zynq_ultra_ps_e_0_0/os_pfb_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'os_pfb_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2409.082 ; gain = 0.000 ; free physical = 6002 ; free virtual = 12535
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2409.082 ; gain = 0.000 ; free physical = 6001 ; free virtual = 12534
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2409.082 ; gain = 0.000 ; free physical = 6001 ; free virtual = 12534
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2409.082 ; gain = 994.555 ; free physical = 6076 ; free virtual = 12609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2409.082 ; gain = 994.555 ; free physical = 6076 ; free virtual = 12609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for os_pfb_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/axi_dma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/axi_smc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/os_pfb. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/ps8_0_axi_periph/s01_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/ps8_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/rst_ps8_0_99M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for os_pfb_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2409.082 ; gain = 994.555 ; free physical = 6076 ; free virtual = 12609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2409.082 ; gain = 994.555 ; free physical = 6078 ; free virtual = 12612
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design os_pfb_ps8_0_axi_periph_0 has unconnected port S01_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2409.082 ; gain = 994.555 ; free physical = 6067 ; free virtual = 12603
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'os_pfb_i/zynq_ultra_ps_e_0/pl_clk0' to pin 'os_pfb_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:01:01 . Memory (MB): peak = 2758.402 ; gain = 1343.875 ; free physical = 5613 ; free virtual = 12149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:01 . Memory (MB): peak = 2758.402 ; gain = 1343.875 ; free physical = 5613 ; free virtual = 12148
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 2769.418 ; gain = 1354.891 ; free physical = 5612 ; free virtual = 12147
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 2769.418 ; gain = 1354.891 ; free physical = 5611 ; free virtual = 12147
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 2769.418 ; gain = 1354.891 ; free physical = 5611 ; free virtual = 12147
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 2769.418 ; gain = 1354.891 ; free physical = 5611 ; free virtual = 12147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 2769.418 ; gain = 1354.891 ; free physical = 5611 ; free virtual = 12147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 2769.418 ; gain = 1354.891 ; free physical = 5611 ; free virtual = 12147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 2769.418 ; gain = 1354.891 ; free physical = 5611 ; free virtual = 12147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------+----------+
+|      |BlackBox name              |Instances |
++------+---------------------------+----------+
+|1     |os_pfb_xbar_0              |         1|
+|2     |os_pfb_auto_ds_0           |         1|
+|3     |os_pfb_auto_pc_0           |         1|
+|4     |os_pfb_auto_ds_1           |         1|
+|5     |os_pfb_auto_pc_1           |         1|
+|6     |os_pfb_axi_dma_0_0         |         1|
+|7     |os_pfb_axi_smc_0           |         1|
+|8     |os_pfb_os_pfb_0            |         1|
+|9     |os_pfb_rst_ps8_0_99M_0     |         1|
+|10    |os_pfb_zynq_ultra_ps_e_0_0 |         1|
++------+---------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |os_pfb_auto_ds_0           |     1|
+|2     |os_pfb_auto_ds_1           |     1|
+|3     |os_pfb_auto_pc_0           |     1|
+|4     |os_pfb_auto_pc_1           |     1|
+|5     |os_pfb_axi_dma_0_0         |     1|
+|6     |os_pfb_axi_smc_0           |     1|
+|7     |os_pfb_os_pfb_0            |     1|
+|8     |os_pfb_rst_ps8_0_99M_0     |     1|
+|9     |os_pfb_xbar_0              |     1|
+|10    |os_pfb_zynq_ultra_ps_e_0_0 |     1|
++------+---------------------------+------+
+
+Report Instance Areas: 
++------+---------------------+--------------------------+------+
+|      |Instance             |Module                    |Cells |
++------+---------------------+--------------------------+------+
+|1     |top                  |                          |  2875|
+|2     |  os_pfb_i           |os_pfb                    |  2875|
+|3     |    ps8_0_axi_periph |os_pfb_ps8_0_axi_periph_0 |  1247|
+|4     |      s00_couplers   |s00_couplers_imp_3K24VT   |   519|
+|5     |      s01_couplers   |s01_couplers_imp_195GAZS  |   519|
++------+---------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 2769.418 ; gain = 1354.891 ; free physical = 5611 ; free virtual = 12147
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 2769.418 ; gain = 491.086 ; free physical = 5649 ; free virtual = 12185
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:01:02 . Memory (MB): peak = 2769.426 ; gain = 1354.891 ; free physical = 5649 ; free virtual = 12185
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2808.480 ; gain = 0.000 ; free physical = 5573 ; free virtual = 12109
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:04 . Memory (MB): peak = 2820.480 ; gain = 1425.410 ; free physical = 5623 ; free virtual = 12159
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2820.480 ; gain = 0.000 ; free physical = 5623 ; free virtual = 12159
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/synth_1/os_pfb_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file os_pfb_wrapper_utilization_synth.rpt -pb os_pfb_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 24 17:17:09 2019...
