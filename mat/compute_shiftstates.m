@@ -9,8 +9,8 @@
 
 % SYSTEM SPECS
 overlap=1/3;       %bin overlap
-M = 32;            %FFT size
-D = M/(1+overlap); %Decimation factor
+M = 16; 32;            %FFT size
+D = 14; M/(1+overlap); %Decimation factor
 
 % M and D must be integers
 if floor(M) ~= M || floor(D) ~= D

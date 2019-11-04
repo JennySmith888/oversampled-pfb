@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct 25 15:31:51 2019
+# Process ID: 30633
+# Current directory: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_auto_ds_1_synth_1
+# Command line: vivado -log os_pfb_auto_ds_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source os_pfb_auto_ds_1.tcl
+# Log file: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_auto_ds_1_synth_1/os_pfb_auto_ds_1.vds
+# Journal file: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_auto_ds_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source os_pfb_auto_ds_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP os_pfb_auto_ds_1, cache-ID = 6da69f3d260686f7.
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 25 15:32:06 2019...

@@ -1,0 +1,1243 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct 25 15:34:00 2019
+# Process ID: 30962
+# Current directory: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_os_pfb_0_synth_1
+# Command line: vivado -log os_pfb_os_pfb_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source os_pfb_os_pfb_0.tcl
+# Log file: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_os_pfb_0_synth_1/os_pfb_os_pfb_0.vds
+# Journal file: /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_os_pfb_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source os_pfb_os_pfb_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1377.488 ; gain = 0.000 ; free physical = 1981 ; free virtual = 8172
+Command: synth_design -top os_pfb_os_pfb_0 -part xczu28dr-ffvg1517-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30993 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1467.219 ; gain = 76.000 ; free physical = 1788 ; free virtual = 8007
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_os_pfb_0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_os_pfb_0/synth/os_pfb_os_pfb_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb.v:12]
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 19'b0000000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 19'b0000000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 19'b0000000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 19'b0000000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 19'b0000000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 19'b0000000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 19'b0000000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 19'b0000000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 19'b0000000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 19'b0000000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 19'b0000000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 19'b0000000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 19'b0000001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 19'b0000010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 19'b0000100000000000000 
+	Parameter ap_ST_fsm_state16 bound to: 19'b0001000000000000000 
+	Parameter ap_ST_fsm_state17 bound to: 19'b0010000000000000000 
+	Parameter ap_ST_fsm_state18 bound to: 19'b0100000000000000000 
+	Parameter ap_ST_fsm_state19 bound to: 19'b1000000000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter.v:81]
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter_filter_state_M_real' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_filter_state_M_real.v:46]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter_filter_state_M_real_ram' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_filter_state_M_real.v:9]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_filter_state_M_real.v:22]
+INFO: [Synth 8-3876] $readmem data file './polyphase_filter_filter_state_M_real_ram.dat' is read successfully [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_filter_state_M_real.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter_filter_state_M_real_ram' (1#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_filter_state_M_real.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter_filter_state_M_real' (2#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_filter_state_M_real.v:46]
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter_h' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_h.v:42]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter_h_rom' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_h.v:9]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './polyphase_filter_h_rom.dat' is read successfully [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_h.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter_h_rom' (3#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_h.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter_h' (4#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_h.v:42]
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter_shift_states' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_shift_states.v:42]
+	Parameter DataWidth bound to: 5 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter_shift_states_rom' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_shift_states.v:9]
+	Parameter DWIDTH bound to: 5 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+	Parameter MEM_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_shift_states.v:21]
+INFO: [Synth 8-3876] $readmem data file './polyphase_filter_shift_states_rom.dat' is read successfully [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_shift_states.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter_shift_states_rom' (5#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_shift_states.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter_shift_states' (6#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_shift_states.v:42]
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter_temp_M_real' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_temp_M_real.v:43]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'polyphase_filter_temp_M_real_ram' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_temp_M_real.v:9]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_temp_M_real.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter_temp_M_real_ram' (7#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_temp_M_real.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter_temp_M_real' (8#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter_temp_M_real.v:43]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'os_pfb_ap_faddfsub_2_full_dsp_32' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_faddfsub_2_full_dsp_32.vhd:74]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 1 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 1 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_faddfsub_2_full_dsp_32.vhd:208]
+INFO: [Synth 8-256] done synthesizing module 'os_pfb_ap_faddfsub_2_full_dsp_32' (26#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_faddfsub_2_full_dsp_32.vhd:74]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1' (27#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_fadd_32ns_32ns_32_4_full_dsp_1' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fadd_32ns_32ns_32_4_full_dsp_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'os_pfb_ap_fadd_2_full_dsp_32' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_fadd_2_full_dsp_32.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 2 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_fadd_2_full_dsp_32.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'os_pfb_ap_fadd_2_full_dsp_32' (28#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_fadd_2_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_fadd_32ns_32ns_32_4_full_dsp_1' (29#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fadd_32ns_32ns_32_4_full_dsp_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'os_pfb_fmul_32ns_32ns_32_2_max_dsp_1' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'os_pfb_ap_fmul_0_max_dsp_32' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_fmul_0_max_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_fmul_0_max_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'os_pfb_ap_fmul_0_max_dsp_32' (37#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/os_pfb_ap_fmul_0_max_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_fmul_32ns_32ns_32_2_max_dsp_1' (38#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter.v:1110]
+INFO: [Synth 8-6155] done synthesizing module 'polyphase_filter' (39#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fft_os_pfb_config_s' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fft_os_pfb_config_s.v:11]
+	Parameter INPUT_WIDTH bound to: 64 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 64 - type: integer 
+	Parameter CONFIG_WIDTH bound to: 8 - type: integer 
+	Parameter STATUS_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fft_os_pfb_config_s_core' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/fft_os_pfb_config_s_core.vhd:89]
+	Parameter C_XDEVICEFAMILY bound to: virtex7 - type: string 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXIS_STATUS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_NFFT_MAX bound to: 5 - type: integer 
+	Parameter C_ARCH bound to: 3 - type: integer 
+	Parameter C_HAS_NFFT bound to: 0 - type: integer 
+	Parameter C_USE_FLT_PT bound to: 1 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_TWIDDLE_WIDTH bound to: 24 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 32 - type: integer 
+	Parameter C_HAS_SCALING bound to: 1 - type: integer 
+	Parameter C_HAS_BFP bound to: 0 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_OVFLO bound to: 1 - type: integer 
+	Parameter C_HAS_NATURAL_INPUT bound to: 1 - type: integer 
+	Parameter C_HAS_NATURAL_OUTPUT bound to: 1 - type: integer 
+	Parameter C_HAS_CYCLIC_PREFIX bound to: 0 - type: integer 
+	Parameter C_HAS_XK_INDEX bound to: 0 - type: integer 
+	Parameter C_DATA_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_TWIDDLE_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BRAM_STAGES bound to: 0 - type: integer 
+	Parameter C_REORDER_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_USE_HYBRID_RAM bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter C_CMPY_TYPE bound to: 1 - type: integer 
+	Parameter C_BFLY_TYPE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xfft_v9_1_1' declared at '/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/60b9/hdl/xfft_v9_1_vh_rfs.vhd:102725' bound to instance 'U0' of component 'xfft_v9_1_1' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/fft_os_pfb_config_s_core.vhd:205]
+WARNING: [Synth 8-5858] RAM adel30_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM bdel_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM sub_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM adel30_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM bdel_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM sub_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'fft_os_pfb_config_s_core' (109#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/ip/fft_os_pfb_config_s_core.vhd:89]
+WARNING: [Synth 8-3848] Net ap_idle in module/entity fft_os_pfb_config_s does not have driver. [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fft_os_pfb_config_s.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'fft_os_pfb_config_s' (110#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fft_os_pfb_config_s.v:11]
+INFO: [Synth 8-6157] synthesizing module 'be' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/be.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/be.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'be' (111#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/be.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w64_d1_A' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w64_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b01 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w64_d1_A_shiftReg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w64_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w64_d1_A_shiftReg' (112#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w64_d1_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w64_d1_A' (113#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w64_d1_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d1_A' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w8_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b01 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w8_d1_A_shiftReg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w8_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b01 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d1_A_shiftReg' (114#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w8_d1_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w8_d1_A' (115#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w8_d1_A.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_fft_os_pfb_config_U0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_fft_os_pfb_config_U0.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'start_for_fft_os_pfb_config_U0_shiftReg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_fft_os_pfb_config_U0.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_fft_os_pfb_config_U0_shiftReg' (116#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_fft_os_pfb_config_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_fft_os_pfb_config_U0' (117#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_fft_os_pfb_config_U0.v:45]
+INFO: [Synth 8-6157] synthesizing module 'start_for_be_U0' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_be_U0.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0101 
+INFO: [Synth 8-6157] synthesizing module 'start_for_be_U0_shiftReg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_be_U0.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 4'b0101 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_be_U0_shiftReg' (118#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_be_U0.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_be_U0' (119#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_be_U0.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb' (120#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'os_pfb_os_pfb_0' (121#1) [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_os_pfb_0/synth/os_pfb_os_pfb_0.v:58]
+WARNING: [Synth 8-3331] design fifo_w8_d1_A_shiftReg has unconnected port a[0]
+WARNING: [Synth 8-3331] design fifo_w64_d1_A_shiftReg has unconnected port a[0]
+WARNING: [Synth 8-3331] design be has unconnected port ifft_status_data_V_dout[7]
+WARNING: [Synth 8-3331] design be has unconnected port ifft_status_data_V_dout[6]
+WARNING: [Synth 8-3331] design be has unconnected port ifft_status_data_V_dout[5]
+WARNING: [Synth 8-3331] design be has unconnected port ifft_status_data_V_dout[4]
+WARNING: [Synth 8-3331] design be has unconnected port ifft_status_data_V_dout[3]
+WARNING: [Synth 8-3331] design be has unconnected port ifft_status_data_V_dout[2]
+WARNING: [Synth 8-3331] design be has unconnected port ifft_status_data_V_dout[1]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port a[4]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port a[3]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port a[2]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port a[1]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port a[0]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port aset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port sset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized22 has unconnected port sinit
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[15]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[14]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[13]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[12]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[11]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[10]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[9]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[8]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[7]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[6]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[5]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[4]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[3]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[2]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[1]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port D[0]
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized58 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port a[4]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port a[3]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port a[2]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port a[1]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port a[0]
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port aclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port aset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port ainit
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port sclr
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port sset
+WARNING: [Synth 8-3331] design c_shift_ram_v12_0_12_legacy__parameterized1 has unconnected port sinit
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[15]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[14]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[13]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[12]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[11]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[10]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[9]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[8]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[7]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[6]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[5]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[4]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[3]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[2]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[1]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port D[0]
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized3 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[15]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[14]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[13]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[12]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[11]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[10]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[9]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[8]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[7]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[6]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[5]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[4]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[3]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[2]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[1]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port D[0]
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized66 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design fp_shift_ram_clr_op has unconnected port EXTRA_CLR
+WARNING: [Synth 8-3331] design fp_shift_ram_clr_op has unconnected port EXTRA_CLR_BLANK
+WARNING: [Synth 8-3331] design shift_ram__parameterized61 has unconnected port D1
+WARNING: [Synth 8-3331] design shift_ram__parameterized61 has unconnected port CLK
+WARNING: [Synth 8-3331] design shift_ram__parameterized61 has unconnected port CE
+WARNING: [Synth 8-3331] design shift_ram__parameterized61 has unconnected port SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized61 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized61 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design r22_memory__parameterized1 has unconnected port depthx2
+WARNING: [Synth 8-3331] design shift_ram__parameterized60 has unconnected port D1
+WARNING: [Synth 8-3331] design shift_ram__parameterized60 has unconnected port COMBI_SCLR
+WARNING: [Synth 8-3331] design shift_ram__parameterized60 has unconnected port DEPTHx2
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port AINIT
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port ACLR
+WARNING: [Synth 8-3331] design c_reg_fd_v12_0_5_viv has unconnected port ASET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:25 ; elapsed = 00:01:45 . Memory (MB): peak = 2058.469 ; gain = 667.250 ; free physical = 2883 ; free virtual = 9106
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:46 . Memory (MB): peak = 2058.469 ; gain = 667.250 ; free physical = 2910 ; free virtual = 9134
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:27 ; elapsed = 00:01:46 . Memory (MB): peak = 2058.469 ; gain = 667.250 ; free physical = 2910 ; free virtual = 9134
+---------------------------------------------------------------------------------
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'dist_ram.lutram.mem' of module 'dist_mem'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'dist_ram.lutram.mem' of module 'dist_mem__parameterized0'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+INFO: [Netlist 29-17] Analyzing 2158 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_os_pfb_0/constraints/os_pfb_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ip/os_pfb_os_pfb_0/constraints/os_pfb_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_os_pfb_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_os_pfb_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2563.898 ; gain = 0.000 ; free physical = 2012 ; free virtual = 8236
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 330 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 32 instances
+  FD => FDRE: 2 instances
+  FDE => FDRE: 198 instances
+  FDR => FDRE: 22 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 74 instances
+  RAMB18E1 => RAMB18E2: 2 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2571.898 ; gain = 0.000 ; free physical = 2009 ; free virtual = 8232
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2571.898 ; gain = 8.000 ; free physical = 2007 ; free virtual = 8231
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:46 ; elapsed = 00:02:13 . Memory (MB): peak = 2571.898 ; gain = 1180.680 ; free physical = 2156 ; free virtual = 8381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:46 ; elapsed = 00:02:13 . Memory (MB): peak = 2571.898 ; gain = 1180.680 ; free physical = 2156 ; free virtual = 8381
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_os_pfb_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:02:13 . Memory (MB): peak = 2571.898 ; gain = 1180.680 ; free physical = 2156 ; free virtual = 8381
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'temp_M_real_addr_2_reg_717_reg[4:0]' into 'temp_M_imag_addr_2_reg_722_reg[4:0]' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/polyphase_filter.v:553]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_530_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_fu_409_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reading_last_symbol" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "event_tlast_unexpected" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "first_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "second_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5544] ROM "empty_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "first_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "second_quarter_table". This will be implemented in logic
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond_fu_115_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_s_fu_127_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/start_for_be_U0.v:92]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:54 ; elapsed = 00:02:23 . Memory (MB): peak = 2571.898 ; gain = 1180.680 ; free physical = 2141 ; free virtual = 8369
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/os_pfb_ap_faddfsub_2_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized0) to 'inst/polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/os_pfb_ap_faddfsub_2_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/os_pfb_ap_faddfsub_2_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized0) to 'inst/polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/os_pfb_ap_faddfsub_2_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'floating_point_v7_1_7_flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (floating_point_v7_1_7_delay__parameterized0) to 'floating_point_v7_1_7_flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/polyphase_filter_U0/os_pfb_fadd_32ns_32ns_32_4_full_dsp_1_U2/os_pfb_ap_fadd_2_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized0) to 'inst/polyphase_filter_U0/os_pfb_fadd_32ns_32ns_32_4_full_dsp_1_U2/os_pfb_ap_fadd_2_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/polyphase_filter_U0/os_pfb_fadd_32ns_32ns_32_4_full_dsp_1_U2/os_pfb_ap_fadd_2_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized0) to 'inst/polyphase_filter_U0/os_pfb_fadd_32ns_32ns_32_4_full_dsp_1_U2/os_pfb_ap_fadd_2_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'os_pfb_fmul_32ns_32ns_32_2_max_dsp_1:/os_pfb_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized0) to 'os_pfb_fmul_32ns_32ns_32_2_max_dsp_1:/os_pfb_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'os_pfb_fmul_32ns_32ns_32_2_max_dsp_1:/os_pfb_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_1_7_delay__parameterized0) to 'os_pfb_fmul_32ns_32ns_32_2_max_dsp_1:/os_pfb_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/get_block_max_exp/gen_start_dly' (shift_ram__parameterized2) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/get_block_max_exp/gen_fwd_inv_we_out'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_block_fp:/fpo/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_block_fp:/fpo/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_block_fp:/fpo/DELAY_DIVIDE_BY_ZERO' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_block_fp:/fpo/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_compare' (logic_gate__parameterized5) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'cnt_sat:/tc_compare' (logic_gate__parameterized2) to 'cnt_sat:/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[1].delay_reset_pe/tc_compare' (logic_gate__parameterized3) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[1].delay_reset_pe/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[0].delay_reset_pe/tc_compare' (logic_gate__parameterized4) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[0].delay_reset_pe/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/SR2' (shift_ram__parameterized44) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/SR3'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/DELAY_INVALID_OP' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'fp_convert_to_fp:/fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_DELAY' (floating_point_v7_0_15_delay__parameterized13) to 'fp_convert_to_fp:/fpo/FIX_TO_FLT_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLT_TO_FIX_OP.SPD.OP/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "FIX_TO_FLT_OP.SPD.OP/LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fadd_32ns_32ns_32_4_full_dsp_1_U2/ce_r_reg' into 'polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/ce_r_reg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fadd_32ns_32ns_32_4_full_dsp_1.v:53]
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U3/ce_r_reg' into 'polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/ce_r_reg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:62]
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/ce_r_reg' into 'polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/ce_r_reg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:62]
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U5/ce_r_reg' into 'polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/ce_r_reg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:62]
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U5/din0_buf1_reg[31:0]' into 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din0_buf1_reg[31:0]' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:49]
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U5/din1_buf1_reg[31:0]' into 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U3/din1_buf1_reg[31:0]' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:51]
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U6/ce_r_reg' into 'polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/ce_r_reg' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:62]
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U6/din0_buf1_reg[31:0]' into 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U3/din0_buf1_reg[31:0]' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:49]
+INFO: [Synth 8-4471] merging register 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U6/din1_buf1_reg[31:0]' into 'polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[31:0]' [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1.v:51]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ifft_status_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0]' and it is trimmed from '8' to '1' bits. [/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.srcs/sources_1/bd/os_pfb/ipshared/ed10/hdl/verilog/fifo_w8_d1_A.v:37]
+INFO: [Synth 8-5546] ROM "polyphase_filter_U0/exitcond_fu_530_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "be_U0/exitcond_fu_115_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "be_U0/tmp_s_fu_127_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3886] merging instance 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\ifft_config_data_V_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0] )
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[7]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[3]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/imag_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[0].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[7]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[3]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/real_to_bfp/fpo/FLT_TO_FIX_OP.SPD.OP/ALIGN_Z_D/MUX_LOOP[1].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[24]' (FDRE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[2]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[4]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[4]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\lut_rom.q1_read_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\COSINE_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/os_pfb_fmul_32ns_32ns_32_2_max_dsp_1_U4/din1_buf1_reg[22] )
+INFO: [Synth 8-3886] merging instance 'inst/polyphase_filter_U0/state_idx_reg[2]' (FDRE) to 'inst/polyphase_filter_U0/state_idx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/polyphase_filter_U0/state_idx_load_reg_652_reg[2]' (FDE) to 'inst/polyphase_filter_U0/state_idx_load_reg_652_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_re1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[0].u_l[0].dynamic_sub.subtract_delay_im1/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/polyphase_filter_U0/shift_states_U/polyphase_filter_shift_states_rom_U/q0_reg[0]' (FDE) to 'inst/polyphase_filter_U0/shift_states_U/polyphase_filter_shift_states_rom_U/q0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/polyphase_filter_U0/shift_states_U/polyphase_filter_shift_states_rom_U/q0_reg[1]' (FDE) to 'inst/polyphase_filter_U0/shift_states_U/polyphase_filter_shift_states_rom_U/q0_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/shift_states_U/polyphase_filter_shift_states_rom_U/q0_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[1]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[1]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[2]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[2]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[3]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[3]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[4]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[4]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[5]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[5]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[6]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[6]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[7]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[7]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[8]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[8]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[9]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[9]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[10]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[10]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[11]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[11]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[12]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[12]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[13]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[13]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[14]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[14]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[15]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[15]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[16]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[16]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[17]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[17]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[18]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[18]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[19]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[19]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[20]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[20]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[21]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[21]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[22]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q2_read_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\lut_rom.q1_read_reg[23] )
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_re0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[1].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.qDSP[0].appDSP[0].bppDSP[1].u_l[0].dynamic_sub.subtract_delay_im0/d1.dout_i_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[24]' (FDRE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[24]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\polyphase_filter_U0/os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1_U1/ce_r_reg )
+INFO: [Synth 8-3886] merging instance 'inst/polyphase_filter_U0/shift_reg_783_reg[0]' (FDE) to 'inst/polyphase_filter_U0/shift_reg_783_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/polyphase_filter_U0/shift_reg_783_reg[1]' (FDE) to 'inst/polyphase_filter_U0/shift_reg_783_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\COSINE_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\be_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/tmp_3_reg_647_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/tmp_3_reg_647_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/tmp_3_reg_647_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/tmp_3_reg_647_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/tmp_3_reg_647_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\axi_wrapper/config_channel_fifo/gen_non_real_time.data_in_fifo_pt1/fifo_wr_data_1_reg[0] )
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[4]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[24] )
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[4]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[24] )
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[0]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/lut_rom.q1_read_reg[23]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[1]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[2]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[3]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[4]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[5]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[6]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[7]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[8]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[9]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[10]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[11]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[12]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[13]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[14]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/COSINE_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[15]' (FDE) to 'inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2/SINE_reg[22]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/shift_reg_783_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.TW/twiddle_generator/tw2.twgen2 /\COSINE_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\axi_wrapper/current_state_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Aidelay0/d1.dout_i_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/has_TW_mult.MULT/i_cmpy/four_mult_structure.use_dsp.i_dsp/re_im/use_DSP48.iAdelx[0].iAdely[1].u_l[1].need_dsp_delay.Ardelay0/d1.dout_i_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\axi_wrapper/current_state_reg[8] )
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv__parameterized1.
+INFO: [Synth 8-3332] Sequential element (FLT_TO_FIX_OP.SPD.OP/COND_DET/MANT_CARRY.MANT_ALL_ZERO_DET/CARRY_ZERO_DET/CHAIN_GEN[3].CARRYS_DEL.NEED_DEL.CARRYS_FD) is unused and will be removed from module floating_point_v7_0_15_viv__1.
+INFO: [Synth 8-3332] Sequential element (FLT_TO_FIX_OP.SPD.OP/COND_DET/MANT_CARRY.MANT_ALL_ZERO_DET/CARRY_ZERO_DET/CHAIN_GEN[3].CARRYS_DEL.NEED_DEL.CARRYS_FD) is unused and will be removed from module floating_point_v7_0_15_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_7/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[2].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[1].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[0].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe0_bf1_addr_gen/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[4].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[3].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[2].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[1].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.FF_gen[0].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.REG3/need_sclr_lut.real_shift_ram.d3plus.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/gen_xk_index/gen_dly/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/gen_xk_index/gen_dly/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/gen_xk_index/gen_dly/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/gen_xk_index/gen_dly/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/gen_xk_index/gen_dly/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3332] Sequential element (xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.busy_gen/proc_start_delay/need_sclr_lut.real_shift_ram.FF_gen[0].reg) is unused and will be removed from module xfft_v9_1_1_viv.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\fft_os_pfb_config_U0/inst/U0 /i_synth/\axi_wrapper/config_channel_fifo/gen_non_real_time.data_in_fifo_pt1/fifo0 /\fifo_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\polyphase_filter_U0/tmp_2_i_i_reg_748_reg[21] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:08 ; elapsed = 00:02:38 . Memory (MB): peak = 2571.898 ; gain = 1180.680 ; free physical = 2104 ; free virtual = 8341
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_0/polyphase_filter_U0/filter_state_M_real_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_0/polyphase_filter_U0/filter_state_M_real_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_1/polyphase_filter_U0/filter_state_M_imag_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_1/polyphase_filter_U0/filter_state_M_imag_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_2/polyphase_filter_U0/temp_M_real_U/polyphase_filter_temp_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_2/polyphase_filter_U0/temp_M_real_U/polyphase_filter_temp_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_3/polyphase_filter_U0/temp_M_imag_U/polyphase_filter_temp_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_3/polyphase_filter_U0/temp_M_imag_U/polyphase_filter_temp_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_34/polyphase_filter_U0/tmp_7_reg_675_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/i_3_34/polyphase_filter_U0/tmp_7_reg_675_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:28 ; elapsed = 00:03:14 . Memory (MB): peak = 2787.477 ; gain = 1396.258 ; free physical = 1714 ; free virtual = 7952
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:31 ; elapsed = 00:03:18 . Memory (MB): peak = 2839.516 ; gain = 1448.297 ; free physical = 1676 ; free virtual = 7914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/polyphase_filter_U0/filter_state_M_real_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/polyphase_filter_U0/filter_state_M_real_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/polyphase_filter_U0/filter_state_M_imag_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/polyphase_filter_U0/filter_state_M_imag_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/polyphase_filter_U0/temp_M_real_U/polyphase_filter_temp_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/polyphase_filter_U0/temp_M_real_U/polyphase_filter_temp_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/polyphase_filter_U0/temp_M_imag_U/polyphase_filter_temp_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/polyphase_filter_U0/temp_M_imag_U/polyphase_filter_temp_M_real_ram_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:36 ; elapsed = 00:03:23 . Memory (MB): peak = 2851.531 ; gain = 1460.312 ; free physical = 1676 ; free virtual = 7914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5778] max_fanout handling on net ce_w2c is sub-optimal because some of its loads are not in same hierarchy as its driver   
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:38 ; elapsed = 00:03:25 . Memory (MB): peak = 2851.531 ; gain = 1460.312 ; free physical = 1677 ; free virtual = 7915
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:38 ; elapsed = 00:03:25 . Memory (MB): peak = 2851.531 ; gain = 1460.312 ; free physical = 1677 ; free virtual = 7915
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:39 ; elapsed = 00:03:26 . Memory (MB): peak = 2851.531 ; gain = 1460.312 ; free physical = 1679 ; free virtual = 7916
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:39 ; elapsed = 00:03:26 . Memory (MB): peak = 2851.531 ; gain = 1460.312 ; free physical = 1679 ; free virtual = 7916
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:40 ; elapsed = 00:03:27 . Memory (MB): peak = 2851.531 ; gain = 1460.312 ; free physical = 1678 ; free virtual = 7916
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:40 ; elapsed = 00:03:27 . Memory (MB): peak = 2851.531 ; gain = 1460.312 ; free physical = 1678 ; free virtual = 7916
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY8     |     2|
+|2     |DSP48E1    |    26|
+|3     |LUT1       |   115|
+|4     |LUT2       |   789|
+|5     |LUT3       |  1234|
+|6     |LUT4       |   505|
+|7     |LUT5       |   460|
+|8     |LUT6       |   569|
+|9     |MUXCY      |   948|
+|10    |MUXF7      |     4|
+|11    |MUXF8      |     2|
+|12    |RAM64X1D   |    74|
+|13    |RAMB18E1   |     2|
+|14    |RAMB18E2   |     4|
+|15    |RAMB18E2_2 |     1|
+|16    |SRL16E     |  1048|
+|17    |SRLC32E    |    17|
+|18    |XORCY      |   800|
+|19    |FD         |     2|
+|20    |FDE        |   191|
+|21    |FDR        |    16|
+|22    |FDRE       |  5452|
+|23    |FDSE       |    78|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:40 ; elapsed = 00:03:27 . Memory (MB): peak = 2851.531 ; gain = 1460.312 ; free physical = 1678 ; free virtual = 7916
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1403 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:23 ; elapsed = 00:03:03 . Memory (MB): peak = 2851.531 ; gain = 946.883 ; free physical = 1712 ; free virtual = 7949
+Synthesis Optimization Complete : Time (s): cpu = 00:02:40 ; elapsed = 00:03:27 . Memory (MB): peak = 2851.539 ; gain = 1460.312 ; free physical = 1712 ; free virtual = 7949
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'dist_ram.lutram.mem' of module 'dist_mem__parameterized0'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+WARNING: [Synth 37-28] Duplicate attribute 'max_fanout' found for instance 'dist_ram.lutram.mem' of module 'dist_mem'.
+Resolution: Check your design sources near the definition of the module or any related 'include files, looking for duplicate definitions with different values.
+INFO: [Netlist 29-17] Analyzing 2067 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.dig_rev_mem/blk_ram.use_bram_only.mem/depths_3to9.ram_loop[0].use_RAMB18.SDP_RAMB18E1_36x512 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/fft_os_pfb_config_U0/inst/U0/i_synth/xfft_inst/floating_point.xfft_inst/fft/non_floating_point.arch_d.xfft_inst/has_bit_reverse.dig_rev_mem/blk_ram.use_bram_only.mem/depths_3to9.ram_loop[1].use_RAMB18.SDP_RAMB18E1_36x512 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/polyphase_filter_U0/filter_state_M_imag_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/polyphase_filter_U0/filter_state_M_real_U/polyphase_filter_filter_state_M_real_ram_U/ram_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/polyphase_filter_U0/temp_M_imag_U/polyphase_filter_temp_M_real_ram_U/ram_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/polyphase_filter_U0/temp_M_real_U/polyphase_filter_temp_M_real_ram_U/ram_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/polyphase_filter_U0/tmp_7_reg_675_reg_rep has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.164 ; gain = 0.000 ; free physical = 1625 ; free virtual = 7862
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 481 instances were transformed.
+  (CARRY4) => CARRY8: 170 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 26 instances
+  FD => FDRE: 2 instances
+  FDE => FDRE: 191 instances
+  FDR => FDRE: 16 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 74 instances
+  RAMB18E1 => RAMB18E2: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+509 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:46 ; elapsed = 00:03:32 . Memory (MB): peak = 2889.164 ; gain = 1511.676 ; free physical = 1696 ; free virtual = 7934
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.164 ; gain = 0.000 ; free physical = 1696 ; free virtual = 7934
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_os_pfb_0_synth_1/os_pfb_os_pfb_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP os_pfb_os_pfb_0, cache-ID = 00209f430368c99f
+INFO: [Coretcl 2-1174] Renamed 1019 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2921.184 ; gain = 0.000 ; free physical = 1673 ; free virtual = 7933
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/jpsmith/git-repos/oversampled-pfb/vivado/myproj/project_1.runs/os_pfb_os_pfb_0_synth_1/os_pfb_os_pfb_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file os_pfb_os_pfb_0_utilization_synth.rpt -pb os_pfb_os_pfb_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 25 15:38:02 2019...

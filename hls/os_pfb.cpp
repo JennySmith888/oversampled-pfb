@@ -52,7 +52,7 @@ void apply_phase_correction (cx_dataout_t filter_out[M], cx_dataout_t ifft_buffe
 
   // TODO: match implementation above in polyphase filter
   // shift states that have been pre-determined. Need to figure out how to auto-generate
-  static int shift_states[SHIFT_STATES] = {0, 8, 16, 24};
+  static int shift_states[SHIFT_STATES] = {0, 24, 16, 8};
 
   //apply phase correction
   int shift = shift_states[0];

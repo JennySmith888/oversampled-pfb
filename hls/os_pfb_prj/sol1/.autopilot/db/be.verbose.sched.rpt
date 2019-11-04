@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vivado HLS Report for 'be'
+================================================================
+* Date:           Fri Oct 25 14:57:25 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        os_pfb_prj
+* Solution:       sol1
+* Product family: zynquplus
+* Target device:  xczu28dr-ffvg1517-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     1.838|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   66|   66|   66|   66|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |   64|   64|         2|          -|          -|    32|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+	4  / (exitcond)
+3 --> 
+	2  / true
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.65>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %ifft_status_data_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str122, i32 0, i32 0, [1 x i8]* @p_str123, [1 x i8]* @p_str124, [1 x i8]* @p_str125, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str126, [1 x i8]* @p_str127)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %ifft_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str116, i32 0, i32 0, [1 x i8]* @p_str117, [1 x i8]* @p_str118, [1 x i8]* @p_str119, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str120, [1 x i8]* @p_str121)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %out_data, i1* %out_last_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 32, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %ovflow, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 1, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.65ns)   --->   "br label %1" [os_pfb.cpp:74]   --->   Operation 9 'br' <Predicate = true> <Delay = 0.65>
+
+State 2 <SV = 1> <Delay = 1.83>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%i = phi i6 [ 0, %0 ], [ %i_2, %2 ]"   --->   Operation 10 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.78ns)   --->   "%exitcond = icmp eq i6 %i, -32" [os_pfb.cpp:74]   --->   Operation 11 'icmp' 'exitcond' <Predicate = true> <Delay = 0.78> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 32, i64 32, i64 32)"   --->   Operation 12 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.78ns)   --->   "%i_2 = add i6 %i, 1" [os_pfb.cpp:74]   --->   Operation 13 'add' 'i_2' <Predicate = true> <Delay = 0.78> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [os_pfb.cpp:74]   --->   Operation 14 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (1.83ns)   --->   "%ifft_out_read = call i64 @_ssdm_op_Read.ap_fifo.volatile.i64P(i64* %ifft_out)" [os_pfb.cpp:75]   --->   Operation 15 'read' 'ifft_out_read' <Predicate = (!exitcond)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1> <FIFO>
+ST_2 : Operation 16 [1/1] (0.78ns)   --->   "%tmp_s = icmp eq i6 %i, 31" [os_pfb.cpp:76]   --->   Operation 16 'icmp' 'tmp_s' <Predicate = (!exitcond)> <Delay = 0.78> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i64P.i1P(i64* %out_data, i1* %out_last_V, i64 %ifft_out_read, i1 %tmp_s)" [os_pfb.cpp:75]   --->   Operation 17 'write' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 18 [1/1] (1.83ns)   --->   "%p_Val2_s = call i8 @_ssdm_op_Read.ap_fifo.i8P(i8* %ifft_status_data_V)" [/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_fft.h:422->os_pfb.cpp:78]   --->   Operation 18 'read' 'p_Val2_s' <Predicate = (exitcond)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1> <FIFO>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_22 = trunc i8 %p_Val2_s to i1" [/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_fft.h:422->os_pfb.cpp:78]   --->   Operation 19 'trunc' 'tmp_22' <Predicate = (exitcond)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%tmp = zext i1 %tmp_22 to i8" [/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_fft.h:422->os_pfb.cpp:78]   --->   Operation 20 'zext' 'tmp' <Predicate = (exitcond)> <Delay = 0.00>
+ST_2 : Operation 21 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i8P(i8* %ovflow, i8 %tmp)" [/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_fft.h:422->os_pfb.cpp:78]   --->   Operation 21 'write' <Predicate = (exitcond)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 22 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i64P.i1P(i64* %out_data, i1* %out_last_V, i64 %ifft_out_read, i1 %tmp_s)" [os_pfb.cpp:75]   --->   Operation 22 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "br label %1" [os_pfb.cpp:74]   --->   Operation 23 'br' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 24 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.i8P(i8* %ovflow, i8 %tmp)" [/tools/Xilinx/Vivado/2018.3/common/technology/autopilot/hls_fft.h:422->os_pfb.cpp:78]   --->   Operation 24 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "ret void" [os_pfb.cpp:79]   --->   Operation 25 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.656ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', os_pfb.cpp:74) [12]  (0.656 ns)
+
+ <State 2>: 1.84ns
+The critical path consists of the following:
+	fifo read on port 'ifft_out' (os_pfb.cpp:75) [18]  (1.84 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
