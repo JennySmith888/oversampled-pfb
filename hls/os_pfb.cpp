@@ -12,7 +12,7 @@ void polyphase_filter(cx_datain_t in[D], cx_dataout_t filter_out[M], os_pfb_conf
 
   // shift states that have been pre-determined. Need to figure out how to auto-generate
   static int shift_states[SHIFT_STATES] = {0, 8, 16, 24};
-  static int state_idx = 0; static int shift_states[SHIFT_STATES] = {0, 24, 16, 8};
+  static int state_idx = 0;
 
   ifft_config->setDir(0); //inverse transform
 

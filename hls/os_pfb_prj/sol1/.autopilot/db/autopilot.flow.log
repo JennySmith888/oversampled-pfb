@@ -1,0 +1,1249 @@
+INFO-FLOW: Workspace /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1 opened at Thu Nov 14 11:09:26 PST 2019
+Execute   set_part xczu28dr-ffvg1517-2-e 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data single -quiet 
+Command     ap_part_info done; 1.54 sec.
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xczu28dr:-ffvg1517:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       ap_part_info -data single -name xczu28dr-ffvg1517-2-e 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data resources 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_chip_info -quiet -resource {SLICE 53160} {LUT 425280} {FF 850560} {DSP48E 4272} {BRAM 2160} {URAM 80} 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       config_chip_info -quiet -speed medium 
+Command     add_library done; 0.2 sec.
+Execute     add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     get_default_platform 
+Command   set_part done; 1.89 sec.
+Execute   create_clock -period 10 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_dataflow -strict_mode warning -default_channel fifo -fifo_depth 1 
+INFO: [XFORM 203-701] Set default FIFO size in dataflow to 1.
+INFO: [XFORM 203-701] Set the default channel type in dataflow to FIFO.
+Execute   csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     is_encrypted /home/jpsmith/git-repos/oversampled-pfb/hls/sim.cpp 
+Execute     is_xip /home/jpsmith/git-repos/oversampled-pfb/hls/sim.cpp 
+Execute     is_encrypted /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb.cpp 
+Execute     is_xip /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb.cpp 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 0.35 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 5.12 sec.
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'os_pfb.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling os_pfb.cpp as C++
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute       is_encrypted os_pfb.cpp 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "/opt/Vivado/2019.2/lnx64/tools/gcc" -hls  -fno-exceptions  -D__llvm__  -E "os_pfb.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Vivado/2019.2/common/technology/autopilot" -I "/opt/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp" 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Vivado/2019.2/lnx64/tools/gcc -hls -fno-exceptions -D__llvm__ -E os_pfb.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Vivado/2019.2/common/technology/autopilot -I /opt/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp
+WARNING: [HLS 200-40] In file included from os_pfb.cpp:4:
+In file included from ./os_pfb.h:5:
+In file included from /opt/Vivado/2019.2/common/technology/autopilot/hls_fft.h:912:
+In file included from /opt/Vivado/2019.2/common/technology/autopilot/hls_fft_x_complex.h:68:
+/opt/Vivado/2019.2/common/technology/autopilot/hls_x_complex.h:43:9: warning: hls::x_complex library will be replaced in 2019.2 with a new implementation that does not provide automatic bit width expansion. Please avoid relying on this feature. [-W#pragma-messages]
+#pragma message("hls::x_complex library will be replaced in 2019.2 with a new implementation that does not provide automatic bit width expansion. Please avoid relying on this feature.")
+        ^
+1 warning generated.
+Command       clang done; 1.92 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.09 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "/opt/Vivado/2019.2/lnx64/tools/gcc" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Vivado/2019.2/common/technology/autopilot" -I "/opt/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp"  -o "/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Vivado/2019.2/lnx64/tools/gcc -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Vivado/2019.2/common/technology/autopilot -I /opt/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/useless.bc
+WARNING: [HLS 200-40] In file included from os_pfb.cpp:1:
+In file included from os_pfb.cpp:4:
+In file included from ./os_pfb.h:5:
+In file included from /opt/Vivado/2019.2/common/technology/autopilot/hls_fft.h:913:
+In file included from /opt/Vivado/2019.2/common/technology/autopilot/hls_fft_x_complex.h:68:
+/opt/Vivado/2019.2/common/technology/autopilot/hls_x_complex.h:43:9: warning: hls::x_complex library will be replaced in 2019.2 with a new implementation that does not provide automatic bit width expansion. Please avoid relying on this feature. [-W#pragma-messages]
+#pragma message("hls::x_complex library will be replaced in 2019.2 with a new implementation that does not provide automatic bit width expansion. Please avoid relying on this feature.")
+        ^
+1 warning generated.
+Command       clang done; 2.43 sec.
+INFO-FLOW: Done: GCC PP time: 5.4 seconds per iteration
+Execute       source /opt/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source /opt/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source /opt/Vivado/2019.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp std=gnu++98 -directive=/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/.systemc_flag -quiet -fix-errors /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.97 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp std=gnu++98 -directive=/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/all.directive.json -quiet -fix-errors /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.91 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/xilinx-dataflow-lawyer.os_pfb.pp.0.cpp.diag.yml /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/xilinx-dataflow-lawyer.os_pfb.pp.0.cpp.out.log 2> /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/xilinx-dataflow-lawyer.os_pfb.pp.0.cpp.err.log 
+Command       ap_eval done; 1.07 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/tidy-3.1.os_pfb.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/tidy-3.1.os_pfb.pp.0.cpp.out.log 2> /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/tidy-3.1.os_pfb.pp.0.cpp.err.log 
+Command         ap_eval done; 1.68 sec.
+Execute         source /opt/Vivado/2019.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source /opt/Vivado/2019.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Execute         ap_eval exec -ignorestderr /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/xilinx-legacy-rewriter.os_pfb.pp.0.cpp.out.log 2> /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/xilinx-legacy-rewriter.os_pfb.pp.0.cpp.err.log 
+Command         ap_eval done; 0.83 sec.
+Command       tidy_31 done; 2.56 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 4.5 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.8 sec.
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain /opt/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "/opt/Vivado/2019.2/common/technology/autopilot" -I "/opt/Vivado/2019.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "/home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.bc" 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain /opt/Vivado/2019.2/lnx64/tools/gcc -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Vivado/2019.2/common/technology/autopilot -I /opt/Vivado/2019.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.bc
+Command       clang done; 2.49 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.g.bc -hls-opt -except-internalize os_pfb -L/opt/Vivado/2019.2/lnx64/lib -lhlsm -lhlsmc++ -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g 
+Command       llvm-ld done; 1.03 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.750 ; gain = 459.035 ; free physical = 2312 ; free virtual = 12770
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 895.750 ; gain = 459.035 ; free physical = 2312 ; free virtual = 12770
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.pp.bc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.pp.0.bc -disable-opt -L/opt/Vivado/2019.2/lnx64/lib -lfloatconversion -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top os_pfb -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g.0.bc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.16 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 895.750 ; gain = 459.035 ; free physical = 2259 ; free virtual = 12756
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g.1.bc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'polyphase_filter' (os_pfb.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'polyphase_filter' (os_pfb.cpp:32) automatically.
+Command         transform done; 0.14 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g.2.prechk.bc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 895.750 ; gain = 459.035 ; free physical = 2249 ; free virtual = 12747
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.g.1.bc to /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.o.1.bc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'ifft_config.data.V' (os_pfb.cpp:93).
+INFO: [XFORM 203-1101] Packing variable 'in' (os_pfb.cpp:84) into a 64-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'out.data' (os_pfb.cpp:84) into a 64-bit variable.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'polyphase_filter' (os_pfb.cpp:32) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'polyphase_filter' (os_pfb.cpp:32) automatically.
+INFO: [XFORM 203-712] Applying dataflow to function 'os_pfb', detected/extracted 3 process function(s): 
+	 'polyphase_filter'
+	 'hls::fft<os_pfb_config>'
+	 'be'.
+WARNING: [XFORM 203-124] Array  'in': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+Command         transform done; 0.38 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.o.1.tmp.bc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.16 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 960.348 ; gain = 523.633 ; free physical = 2184 ; free virtual = 12717
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.o.2.bc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hls::fft<os_pfb_config>' to 'fft<os_pfb_config>' (/opt/Vivado/2019.2/common/technology/autopilot/hls_fft_x_complex.h:630)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp._M_real' (os_pfb.cpp:18:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp._M_imag' (os_pfb.cpp:18:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'filter_state._M_real' (os_pfb.cpp:28:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'filter_state._M_real' (os_pfb.cpp:30:9)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp._M_real' (os_pfb.cpp:32:27)
+INFO: [XFORM 203-603] Evaluating the output(s) of a call to function '_ssdm_op_BitSet.i8.i8.i32.i1' (/opt/Vivado/2019.2/common/technology/autopilot/hls_fft.h:267:9) in function 'polyphase_filter' and propagating its result(s) since all actual argument(s) to the function are constants.
+Command         transform done; 0.42 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 960.348 ; gain = 523.633 ; free physical = 2156 ; free virtual = 12690
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 2.41 sec.
+Command     elaborate done; 19.13 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'os_pfb' ...
+Execute       ap_set_top_model os_pfb 
+WARNING: [SYN 201-103] Legalizing function name 'fft<os_pfb_config>' to 'fft_os_pfb_config_s'.
+Execute       get_model_list os_pfb -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model os_pfb 
+Execute       preproc_iomode -model be 
+Execute       preproc_iomode -model fft<os_pfb_config> 
+Execute       preproc_iomode -model polyphase_filter 
+Execute       get_model_list os_pfb -filter all-wo-channel 
+INFO-FLOW: Model list for configure: polyphase_filter fft<os_pfb_config> be os_pfb
+INFO-FLOW: Configuring Module : polyphase_filter ...
+Execute       set_default_model polyphase_filter 
+Execute       apply_spec_resource_limit polyphase_filter 
+INFO-FLOW: Configuring Module : fft<os_pfb_config> ...
+Execute       set_default_model fft<os_pfb_config> 
+Execute       apply_spec_resource_limit fft<os_pfb_config> 
+INFO-FLOW: Configuring Module : be ...
+Execute       set_default_model be 
+Execute       apply_spec_resource_limit be 
+INFO-FLOW: Configuring Module : os_pfb ...
+Execute       set_default_model os_pfb 
+Execute       apply_spec_resource_limit os_pfb 
+INFO-FLOW: Model list for preprocess: polyphase_filter fft<os_pfb_config> be os_pfb
+INFO-FLOW: Preprocessing Module: polyphase_filter ...
+Execute       set_default_model polyphase_filter 
+Execute       cdfg_preprocess -model polyphase_filter 
+Execute       rtl_gen_preprocess polyphase_filter 
+INFO-FLOW: Preprocessing Module: fft<os_pfb_config> ...
+Execute       set_default_model fft<os_pfb_config> 
+Execute       cdfg_preprocess -model fft<os_pfb_config> 
+Execute       rtl_gen_preprocess fft<os_pfb_config> 
+INFO-FLOW: Preprocessing Module: be ...
+Execute       set_default_model be 
+Execute       cdfg_preprocess -model be 
+Execute       rtl_gen_preprocess be 
+INFO-FLOW: Preprocessing Module: os_pfb ...
+Execute       set_default_model os_pfb 
+Execute       cdfg_preprocess -model os_pfb 
+Execute       rtl_gen_preprocess os_pfb 
+WARNING: [SYN 201-107] Renaming port name 'os_pfb/in' to 'os_pfb/in_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: polyphase_filter fft<os_pfb_config> be os_pfb
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'polyphase_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model polyphase_filter 
+Execute       schedule -model polyphase_filter 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.16 sec.
+INFO: [HLS 200-111]  Elapsed time: 26.62 seconds; current allocated memory: 171.165 MB.
+Execute       syn_report -verbosereport -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.verbose.sched.rpt 
+Execute       db_write -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.sched.adb -f 
+INFO-FLOW: Finish scheduling polyphase_filter.
+Execute       set_default_model polyphase_filter 
+Execute       bind -model polyphase_filter 
+BIND OPTION: model=polyphase_filter
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 171.682 MB.
+Execute       syn_report -verbosereport -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.verbose.bind.rpt 
+Command       syn_report done; 0.12 sec.
+Execute       db_write -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.bind.adb -f 
+INFO-FLOW: Finish binding polyphase_filter.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fft_os_pfb_config_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model fft<os_pfb_config> 
+Execute       schedule -model fft<os_pfb_config> 
+INFO: [SCHED 204-11] Skip scheduling the IP block.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 171.786 MB.
+Execute       syn_report -verbosereport -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.verbose.sched.rpt 
+Execute       db_write -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.sched.adb -f 
+INFO-FLOW: Finish scheduling fft<os_pfb_config>.
+Execute       set_default_model fft<os_pfb_config> 
+Execute       bind -model fft<os_pfb_config> 
+BIND OPTION: model=fft<os_pfb_config>
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0 seconds; current allocated memory: 171.805 MB.
+Execute       syn_report -verbosereport -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.verbose.bind.rpt 
+Execute       db_write -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.bind.adb -f 
+INFO-FLOW: Finish binding fft<os_pfb_config>.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'be' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model be 
+Execute       schedule -model be 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 171.857 MB.
+Execute       syn_report -verbosereport -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.verbose.sched.rpt 
+Execute       db_write -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.sched.adb -f 
+INFO-FLOW: Finish scheduling be.
+Execute       set_default_model be 
+Execute       bind -model be 
+BIND OPTION: model=be
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 171.992 MB.
+Execute       syn_report -verbosereport -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.verbose.bind.rpt 
+Execute       db_write -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.bind.adb -f 
+INFO-FLOW: Finish binding be.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'os_pfb' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model os_pfb 
+Execute       schedule -model os_pfb 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 172.088 MB.
+Execute       syn_report -verbosereport -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.verbose.sched.rpt 
+Execute       db_write -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.sched.adb -f 
+INFO-FLOW: Finish scheduling os_pfb.
+Execute       set_default_model os_pfb 
+Execute       bind -model os_pfb 
+BIND OPTION: model=os_pfb
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.23 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 172.574 MB.
+Execute       syn_report -verbosereport -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.verbose.bind.rpt 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Command       syn_report done; 0.38 sec.
+Execute       db_write -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.bind.adb -f 
+INFO-FLOW: Finish binding os_pfb.
+Execute       get_model_list os_pfb -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess polyphase_filter 
+Execute       rtl_gen_preprocess fft<os_pfb_config> 
+Execute       rtl_gen_preprocess be 
+Execute       rtl_gen_preprocess os_pfb 
+INFO-FLOW: Model list for RTL generation: polyphase_filter fft<os_pfb_config> be os_pfb
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'polyphase_filter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model polyphase_filter -vendor xilinx -mg_file /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'polyphase_filter_filter_state_M_real' to 'polyphase_filter_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'polyphase_filter_filter_state_M_imag' to 'polyphase_filter_cud' due to the length limit 20
+WARNING: [RTGEN 206-101] Register 'state_idx' is power-on initialization.
+INFO: [SYN 201-210] Renamed object name 'polyphase_filter_shift_states' to 'polyphase_filter_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'polyphase_filter_temp_M_real' to 'polyphase_filter_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'polyphase_filter_temp_M_imag' to 'polyphase_filter_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'os_pfb_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'os_pfb_faddfsub_3g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'os_pfb_fadd_32ns_32ns_32_4_full_dsp_1' to 'os_pfb_fadd_32ns_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'os_pfb_fmul_32ns_32ns_32_2_max_dsp_1' to 'os_pfb_fmul_32ns_ibs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'os_pfb_fadd_32ns_hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'os_pfb_faddfsub_3g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'os_pfb_fmul_32ns_ibs': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'polyphase_filter'.
+INFO: [HLS 200-111]  Elapsed time: 0.47 seconds; current allocated memory: 173.484 MB.
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute       gen_rtl polyphase_filter -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/systemc/polyphase_filter -synmodules polyphase_filter fft<os_pfb_config> be os_pfb 
+Execute       gen_rtl polyphase_filter -style xilinx -f -lang vhdl -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/vhdl/polyphase_filter 
+Execute       gen_rtl polyphase_filter -style xilinx -f -lang vlog -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/verilog/polyphase_filter 
+Execute       syn_report -csynth -model polyphase_filter -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/report/polyphase_filter_csynth.rpt 
+Execute       syn_report -rtlxml -model polyphase_filter -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/report/polyphase_filter_csynth.xml 
+Execute       syn_report -verbosereport -model polyphase_filter -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.verbose.rpt 
+Command       syn_report done; 0.12 sec.
+Execute       db_write -model polyphase_filter -f -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.adb 
+Execute       gen_tb_info polyphase_filter -p /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fft_os_pfb_config_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model fft<os_pfb_config> -vendor xilinx -mg_file /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fft_os_pfb_config_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 175.473 MB.
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute       gen_rtl fft<os_pfb_config> -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/systemc/fft_os_pfb_config_s -synmodules polyphase_filter fft<os_pfb_config> be os_pfb 
+Execute       gen_rtl fft<os_pfb_config> -style xilinx -f -lang vhdl -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/vhdl/fft_os_pfb_config_s 
+Execute       gen_rtl fft<os_pfb_config> -style xilinx -f -lang vlog -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/verilog/fft_os_pfb_config_s 
+Execute       syn_report -csynth -model fft<os_pfb_config> -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/report/fft_os_pfb_config_s_csynth.rpt 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Command       syn_report done; 0.25 sec.
+Execute       syn_report -rtlxml -model fft<os_pfb_config> -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/report/fft_os_pfb_config_s_csynth.xml 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute       syn_report -verbosereport -model fft<os_pfb_config> -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.verbose.rpt 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute       db_write -model fft<os_pfb_config> -f -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.adb 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute       gen_tb_info fft<os_pfb_config> -p /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'be' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model be -vendor xilinx -mg_file /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'be'.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 175.828 MB.
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute       gen_rtl be -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/systemc/be -synmodules polyphase_filter fft<os_pfb_config> be os_pfb 
+Execute       gen_rtl be -style xilinx -f -lang vhdl -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/vhdl/be 
+Execute       gen_rtl be -style xilinx -f -lang vlog -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/verilog/be 
+Execute       syn_report -csynth -model be -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/report/be_csynth.rpt 
+Execute       syn_report -rtlxml -model be -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/report/be_csynth.xml 
+Execute       syn_report -verbosereport -model be -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.verbose.rpt 
+Execute       db_write -model be -f -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.adb 
+Execute       gen_tb_info be -p /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'os_pfb' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model os_pfb -vendor xilinx -mg_file /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'os_pfb/in_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'os_pfb/out_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'os_pfb/out_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'os_pfb/ovflow' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'os_pfb' to 'ap_ctrl_none'.
+INFO: [HLS 200-633] Setting ap_ctrl_none interface for os_pfb
+INFO: [SYN 201-210] Renamed object name 'start_for_fft_os_pfb_config_U0' to 'start_for_fft_os_jbC' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'os_pfb'.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 176.534 MB.
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute       gen_rtl os_pfb -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/systemc/os_pfb -synmodules polyphase_filter fft<os_pfb_config> be os_pfb 
+Execute       gen_rtl os_pfb -istop -style xilinx -f -lang vhdl -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/vhdl/os_pfb 
+Execute       gen_rtl os_pfb -istop -style xilinx -f -lang vlog -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/verilog/os_pfb 
+Execute       syn_report -csynth -model os_pfb -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/report/os_pfb_csynth.rpt 
+Execute       syn_report -rtlxml -model os_pfb -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/syn/report/os_pfb_csynth.xml 
+Execute       syn_report -verbosereport -model os_pfb -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.verbose.rpt 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Command       syn_report done; 0.37 sec.
+Execute       db_write -model os_pfb -f -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.adb 
+Execute       gen_tb_info os_pfb -p /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb 
+Execute       export_constraint_db -f -tool general -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.constraint.tcl 
+Execute       syn_report -designview -model os_pfb -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.design.xml 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data names -quiet 
+Execute         ap_part_info -name xczu9eg-ffvc900-2-i -data info -quiet 
+Command       syn_report done; 0.25 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model os_pfb -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model os_pfb -o /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks os_pfb 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain os_pfb 
+INFO-FLOW: Model list for RTL component generation: polyphase_filter fft<os_pfb_config> be os_pfb
+INFO-FLOW: Handling components in module [polyphase_filter] ... 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+INFO-FLOW: Found component os_pfb_faddfsub_3g8j.
+INFO-FLOW: Append model os_pfb_faddfsub_3g8j
+INFO-FLOW: Found component os_pfb_fadd_32ns_hbi.
+INFO-FLOW: Append model os_pfb_fadd_32ns_hbi
+INFO-FLOW: Found component os_pfb_fmul_32ns_ibs.
+INFO-FLOW: Append model os_pfb_fmul_32ns_ibs
+INFO-FLOW: Found component polyphase_filter_bkb.
+INFO-FLOW: Append model polyphase_filter_bkb
+INFO-FLOW: Found component polyphase_filter_h.
+INFO-FLOW: Append model polyphase_filter_h
+INFO-FLOW: Found component polyphase_filter_dEe.
+INFO-FLOW: Append model polyphase_filter_dEe
+INFO-FLOW: Found component polyphase_filter_eOg.
+INFO-FLOW: Append model polyphase_filter_eOg
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Handling components in module [fft_os_pfb_config_s] ... 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+INFO-FLOW: Found component fft_os_pfb_config_s.
+INFO-FLOW: Append model fft_os_pfb_config_s
+INFO-FLOW: Handling components in module [be] ... 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Handling components in module [os_pfb] ... 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+INFO-FLOW: Found component fifo_w64_d1_A.
+INFO-FLOW: Append model fifo_w64_d1_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component fifo_w64_d1_A.
+INFO-FLOW: Append model fifo_w64_d1_A
+INFO-FLOW: Found component fifo_w8_d1_A.
+INFO-FLOW: Append model fifo_w8_d1_A
+INFO-FLOW: Found component start_for_fft_os_jbC.
+INFO-FLOW: Append model start_for_fft_os_jbC
+INFO-FLOW: Found component start_for_be_U0.
+INFO-FLOW: Append model start_for_be_U0
+INFO-FLOW: Found component regslice_core.
+INFO-FLOW: Append model regslice_core
+INFO-FLOW: Append model polyphase_filter
+INFO-FLOW: Append model fft_os_pfb_config_s
+INFO-FLOW: Append model be
+INFO-FLOW: Append model os_pfb
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: os_pfb_faddfsub_3g8j os_pfb_fadd_32ns_hbi os_pfb_fmul_32ns_ibs polyphase_filter_bkb polyphase_filter_h polyphase_filter_dEe polyphase_filter_eOg regslice_core fft_os_pfb_config_s regslice_core fifo_w64_d1_A fifo_w8_d1_A fifo_w64_d1_A fifo_w8_d1_A start_for_fft_os_jbC start_for_be_U0 regslice_core polyphase_filter fft_os_pfb_config_s be os_pfb
+INFO-FLOW: To file: write model os_pfb_faddfsub_3g8j
+INFO-FLOW: To file: write model os_pfb_fadd_32ns_hbi
+INFO-FLOW: To file: write model os_pfb_fmul_32ns_ibs
+INFO-FLOW: To file: write model polyphase_filter_bkb
+INFO-FLOW: To file: write model polyphase_filter_h
+INFO-FLOW: To file: write model polyphase_filter_dEe
+INFO-FLOW: To file: write model polyphase_filter_eOg
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model fft_os_pfb_config_s
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model fifo_w64_d1_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model fifo_w64_d1_A
+INFO-FLOW: To file: write model fifo_w8_d1_A
+INFO-FLOW: To file: write model start_for_fft_os_jbC
+INFO-FLOW: To file: write model start_for_be_U0
+INFO-FLOW: To file: write model regslice_core
+INFO-FLOW: To file: write model polyphase_filter
+INFO-FLOW: To file: write model fft_os_pfb_config_s
+INFO-FLOW: To file: write model be
+INFO-FLOW: To file: write model os_pfb
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       syn_report -model os_pfb -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 114.29 MHz
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.14 sec.
+Command       ap_source done; 0.14 sec.
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'polyphase_filter_bkb_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'polyphase_filter_h_rom' using auto ROMs.
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO: [RTMG 210-279] Implementing memory 'polyphase_filter_dEe_rom' using distributed ROMs.
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'polyphase_filter_eOg_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Command       ap_source done; 0.5 sec.
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_fft_os_jbC_U(start_for_fft_os_jbC)' using Shift Registers.
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_be_U0_U(start_for_be_U0)' using Shift Registers.
+Command       ap_source done; 0.22 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.12 sec.
+Command       ap_source done; 0.12 sec.
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=os_pfb xml_exists=0
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Command       ap_source done; 0.12 sec.
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute         ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Command       ap_source done; 0.17 sec.
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.constraint.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=8
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=4
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=21 #gSsdmPorts=8
+Execute       source /opt/Vivado/2019.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.dataonly.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.constraint.tcl 
+Execute       sc_get_clocks os_pfb 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/misc/fft_os_pfb_config_s_core_ip.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/misc/os_pfb_ap_fadd_2_full_dsp_32_ip.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/misc/os_pfb_ap_faddfsub_2_full_dsp_32_ip.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/misc/os_pfb_ap_fmul_0_max_dsp_32_ip.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.tbgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.tbgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.tbgen.tcl 
+Execute       source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 960.348 ; gain = 523.633 ; free physical = 2134 ; free virtual = 12677
+INFO: [VHDL 208-304] Generating VHDL RTL for os_pfb.
+INFO: [VLOG 209-307] Generating Verilog RTL for os_pfb.
+Command     autosyn done; 4.65 sec.
+Command   csynth_design done; 23.78 sec.
+Execute   cosim_design 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.12 sec.
+Execute     source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     is_encrypted /home/jpsmith/git-repos/oversampled-pfb/hls/sim.cpp 
+Execute     is_encrypted /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb.cpp 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+INFO-FLOW: TB processing: /home/jpsmith/git-repos/oversampled-pfb/hls/sim.cpp /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/sim.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/sim.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/sim.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 2.24 sec.
+Execute     tidy_31 xilinx-tb31-process /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/sim.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/sim.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 3.3 sec.
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+INFO-FLOW: TB processing: /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb.cpp /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/os_pfb.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/os_pfb.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/os_pfb.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 2.03 sec.
+Execute     tidy_31 xilinx-tb31-process /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/os_pfb.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /opt/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/os_pfb.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 2.07 sec.
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+WARNING: [COSIM 212-75] Fifo port 'ovflow' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.39 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 162.29 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 205.58 sec.
+Execute   export_design 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -format 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -rtl 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+INFO-FLOW: DBG:CMD: export_design_wrap: 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -sdx-target none
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
+Execute     source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl both -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl both -sdx-target none -tool Vivado -impltomg_flag
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.12 sec.
+Execute     source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Command     ap_source done; 0.12 sec.
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute       ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Command     ap_source done; 0.16 sec.
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/polyphase_filter.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/fft_os_pfb_config_s.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/be.compgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.compgen.tcl 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.constraint.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=8
+INFO-FLOW: DBG:CMD:       copying IP vlog from /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/vhdl
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=8
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=os_pfb
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=os_pfb
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.rtl_wrap.cfg.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.constraint.tcl 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/os_pfb.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-files /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/.verilog/sim_tbs
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /opt/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /opt/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.12 sec.
+Command     ap_source done; 0.12 sec.
+Execute     source /opt/Vivado/2019.2/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /opt/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data names -quiet 
+Execute     ap_part_info -name xczu28dr-ffvg1517-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec /home/jpsmith/git-repos/oversampled-pfb/hls/os_pfb_prj/sol1/impl/ip/pack.sh
+Command   export_design done; 26.15 sec.
+Execute   cleanup_all 

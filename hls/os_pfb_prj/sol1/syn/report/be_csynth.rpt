@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vivado HLS Report for 'be'
+================================================================
+* Date:           Thu Nov 14 11:09:54 2019
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        os_pfb_prj
+* Solution:       sol1
+* Product family: zynquplus
+* Target device:  xczu28dr-ffvg1517-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 1.838 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       66|       66| 0.660 us | 0.660 us |   66|   66|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |       64|       64|         2|          -|          -|    32|    no    |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      45|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       -|       -|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|      81|    -|
+|Register         |        -|      -|      17|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|      17|     126|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     2160|   4272|  850560|  425280|   80|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |i_fu_121_p2          |     +    |      0|  0|  15|           6|           1|
+    |icmp_ln75_fu_115_p2  |   icmp   |      0|  0|  11|           6|           7|
+    |out_r_TLAST_int      |   icmp   |      0|  0|  11|           6|           5|
+    |ap_block_state1      |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state2      |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state2_io   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state4      |    or    |      0|  0|   2|           1|           1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0|  45|          22|          17|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------+----+-----------+-----+-----------+
+    |           Name           | LUT| Input Size| Bits| Total Bits|
+    +--------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                 |  27|          5|    1|          5|
+    |ap_done                   |   9|          2|    1|          2|
+    |i_0_reg_104               |   9|          2|    6|         12|
+    |ifft_out_blk_n            |   9|          2|    1|          2|
+    |ifft_status_data_V_blk_n  |   9|          2|    1|          2|
+    |out_r_TDATA_blk_n         |   9|          2|    1|          2|
+    |ovflow_TDATA_blk_n        |   9|          2|    1|          2|
+    +--------------------------+----+-----------+-----+-----------+
+    |Total                     |  81|         17|   12|         27|
+    +--------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  4|   0|    4|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i_0_reg_104  |  6|   0|    6|          0|
+    |i_reg_146    |  6|   0|    6|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        | 17|   0|   17|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+--------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++----------------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk                      |  in |    1| ap_ctrl_hs |         be         | return value |
+|ap_rst                      |  in |    1| ap_ctrl_hs |         be         | return value |
+|ap_start                    |  in |    1| ap_ctrl_hs |         be         | return value |
+|ap_done                     | out |    1| ap_ctrl_hs |         be         | return value |
+|ap_continue                 |  in |    1| ap_ctrl_hs |         be         | return value |
+|ap_idle                     | out |    1| ap_ctrl_hs |         be         | return value |
+|ap_ready                    | out |    1| ap_ctrl_hs |         be         | return value |
+|ifft_out_dout               |  in |   64|   ap_fifo  |      ifft_out      |    pointer   |
+|ifft_out_empty_n            |  in |    1|   ap_fifo  |      ifft_out      |    pointer   |
+|ifft_out_read               | out |    1|   ap_fifo  |      ifft_out      |    pointer   |
+|out_r_TDATA                 | out |   64|    axis    |      out_data      |    pointer   |
+|out_r_TVALID                | out |    1|    axis    |     out_last_V     |    pointer   |
+|out_r_TREADY                |  in |    1|    axis    |     out_last_V     |    pointer   |
+|out_r_TLAST                 | out |    1|    axis    |     out_last_V     |    pointer   |
+|ifft_status_data_V_dout     |  in |    8|   ap_fifo  | ifft_status_data_V |    pointer   |
+|ifft_status_data_V_empty_n  |  in |    1|   ap_fifo  | ifft_status_data_V |    pointer   |
+|ifft_status_data_V_read     | out |    1|   ap_fifo  | ifft_status_data_V |    pointer   |
+|ovflow_TDATA                | out |    8|    axis    |       ovflow       |    pointer   |
+|ovflow_TVALID               | out |    1|    axis    |       ovflow       |    pointer   |
+|ovflow_TREADY               |  in |    1|    axis    |       ovflow       |    pointer   |
++----------------------------+-----+-----+------------+--------------------+--------------+
+

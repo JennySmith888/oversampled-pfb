@@ -1,0 +1,5 @@
+   Build using "/opt/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling sim.cpp_pre.cpp.tb.cpp
+   Compiling os_pfb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_os_pfb.cpp
+   Generating cosim.tv.exe
